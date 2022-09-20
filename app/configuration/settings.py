@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     # api's
     'tweet',
     'chat',
+    'user',
 ]
 
 ASGI_APPLICATION = 'configuration.asgi.application'
@@ -151,6 +152,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'user.User'
 
 CORS_ALLOWED_ORIGINS = [
 
